@@ -11,9 +11,12 @@ app.set("views", "./views");
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
-  res.render("index"); // ./views/index.ejs
-  //   res.send("Hello World!");
+  res.render("home"); // ./views/index.ejs
 });
+
+// app.get("/", (req, res) => {
+//   res.render("index"); // ./views/index.ejs
+// });
 
 app.get("/profile", (req, res) => {
   res.render("profile");
