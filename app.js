@@ -23,7 +23,7 @@ app.get("/profile", (req, res) => {
 });
 
 app.get("/map", (req, res) => {
-  res.render("/map");
+  res.render("map");
 });
 
 app.get("/contact", (req, res) => {

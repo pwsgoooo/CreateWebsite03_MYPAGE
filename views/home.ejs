@@ -21,6 +21,8 @@
       html,
       body {
         /* position: absolute; */
+        margin:0;
+        padding:0;
       }
 
       header {
@@ -32,6 +34,7 @@
         place-items: center;
         background-color: bisque;
         position: fixed;
+        z-index: 1000;
         left:0;
         right:0;
         top:0;
@@ -66,7 +69,7 @@
       </nav>
     </header>
 
-    <article style="position:absolute; background-color: brown; top:5em; height: 100%; width:100%;">
+    <div id="container" style="position:absolute; background-color: brown; margin-top:5em; height: 100%; width:100%;">
 
         <div class="nanum-myeongjo-bold" style="font-size: 3em; padding-left: 2em; padding-top:4em;">
             안녕하세요. <br>
@@ -166,10 +169,10 @@
     우선이의 홈페이지에 오신걸 환영합니다. !!!!<br>
     우선이의 홈페이지에 오신걸 환영합니다. !!!!<br> -->
   
-    </article>
+    </div>
     <footer>
       <hr />
-      <p>copyright 우선 all right reserved.</p>
+      <p style="padding-left: 2em;">copyright 우선 all right reserved.</p>
     </footer>
   </article>
 </html>

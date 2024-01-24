@@ -1,7 +1,23 @@
 <%-include('header.ejs')%> 프로필입미다만
-<ul style="margin-top: 5em">
-  <li>이름 : 박우선</li>
-  <li>이메일 : pws_01@naver.com</li>
-  <li>주소 : 경기 서울에 살고싶어요 ~</li>
-</ul>
+<div id="container" style="display: flex; margin-top: 5em">
+  <div id="left-div" style="flex: 1; padding-top: 5em; padding-left: 2em">
+    <ul>
+      <li>이름 : 박우선</li>
+      <li>이메일 : pws_01@naver.com</li>
+      <li>주소 : IT World in Republic of Korea</li>
+    </ul>
+  </div>
+
+  <div id="right-div" style="flex: 1; padding-top: 5em">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/_0FiwqSHr4E?si=dB8av2aTGfAb9o2W"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
+</div>
 <%-include('footer.ejs')%>
