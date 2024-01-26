@@ -42,18 +42,19 @@ app.post("/contactProc", (req, res) => {
   const memo = req.body.memo;
 
   var sql =
-    'insert into make_web.contact(name,phone,email,memo,regdate) values("${name}","${phone}","${email}","${memo}", now())';
+    "insert into make_web.contact(name,phone,email,memo,regdate) values( ?, ?, ?, ?, now() )";
+  var values = [name, phone, email, memo];
 
-  connecection.query(sql, function (err, result) {
+  connecection.query(sql, values, function (err, result) {
     if (err) throw err;
-    console.log("자료 1개가 삽입되었습니다.");
+    console.log("자료 1개가 삽입되었습니다. ", values);
     res.send(
-      "<script> alert(문의사항이 등록되었습니다.); locatio.href='/' </script>"
+      "<script> alert('문의사항이 등록되었습니다.'); location.href='/'; </script>"
     );
   });
 
-  var a = "{$name} ${phone} ${email} ${memo}";
-  res.send(a);
+  // var a = "{$name} ${phone} ${email} ${memo}";
+  // res.send(a);
 });
 
 app.get("/test", (req, res) => {
