@@ -20,19 +20,23 @@ const connecection = mysql.createConnection({
 });
 
 app.get("/", (req, res) => {
-  res.render("home"); // ./views/index.ejs
+  res.render("index"); // ./views/index.ejs
 });
 
-app.get("/profile", (req, res) => {
-  res.render("profile");
+app.get("/qualification", (req, res) => {
+  res.render("qualification");
 });
 
-app.get("/map", (req, res) => {
-  res.render("map");
+app.get("/project", (req, res) => {
+  res.render("project");
 });
 
 app.get("/contact", (req, res) => {
   res.render("contact");
+});
+
+app.get("/engineer", (req, res) => {
+  res.render("engineer");
 });
 
 app.post("/contactProc", (req, res) => {
