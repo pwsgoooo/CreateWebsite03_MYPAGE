@@ -11,6 +11,10 @@ app.set("views", "./views");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// app.get("/images", express.static("images"));
+// app.use(express.static("images"));
+app.use("/images", express.static(__dirname + "/images"));
+
 const connecection = mysql.createConnection({
   host: "127.0.0.1",
   port: 3306,

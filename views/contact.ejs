@@ -5,20 +5,39 @@
 >
   <form action="/contactProc" method="post">
     <ul style="list-style: none">
-      <li style="margin-bottom: 4%">문의하기</li>
-      <li style="margin-bottom: 4%">
+      <li style="margin-bottom: 6%">
         이&nbsp;&nbsp;&nbsp;름 :
-        <input type="text" name="name" required size="40" />
+        <input
+          type="text"
+          name="name"
+          required
+          size="40"
+          style="height: 1.5em"
+        />
       </li>
-      <li style="margin-bottom: 4%">
-        연락처 : <input type="text" name="phone" required size="40" />
+      <li style="margin-bottom: 6%">
+        연락처 :
+        <input
+          type="text"
+          name="phone"
+          required
+          size="40"
+          style="height: 1.5em"
+        />
       </li>
-      <li style="margin-bottom: 4%">
-        이메일 : <input type="text" name="email" required size="40" />
+      <li style="margin-bottom: 6%">
+        이메일 :
+        <input
+          type="text"
+          name="email"
+          required
+          size="40"
+          style="height: 1.5em"
+        />
       </li>
-      <li style="margin-bottom: 4%">
+      <li style="margin-bottom: 6%">
         내용 <br />
-        <textarea name="memo" id="" cols="51" rows="10"></textarea>
+        <textarea name="memo" id="" cols="51" style="height: 4.5em"></textarea>
       </li>
       <button
         style="
@@ -27,7 +46,6 @@
           line-height: 3em;
           border-color: #d81159;
           background-color: #ffbc42;
-          /* color: whitesmoke; */
           font-weight: bold;
           color: white;
         "

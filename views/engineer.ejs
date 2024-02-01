@@ -1,5 +1,35 @@
 <%-include('header.ejs')%>
-<div id="container" style="margin-top: 5em; padding-top: 5em">
-  <p style="padding-left: 2em">database 형태별 설계, 지식사항</p>
+<div id="container">
+  <div
+    class="parent"
+    style="padding-top: 6em; margin: 6.5em auto; width: 80%; position: relative"
+  >
+    <div
+      class="first"
+      style="
+        width: 42%;
+        float: left;
+        border: 1px solid black;
+        box-sizing: border-box;
+      "
+    >
+      <div style="display: grid; place-items: center">
+        SQL; Structured Query Language;
+      </div>
+    </div>
+    <div
+      class="second"
+      style="
+        width: 42%;
+        float: right;
+        border: 1px solid black;
+        box-sizing: border-box;
+      "
+    >
+      <div style="display: grid; place-items: center">
+        NoSQL; Not Structured Query Language;
+      </div>
+    </div>
+  </div>
+  <%-include('footer.ejs')%>
 </div>
-<%-include('footer.ejs')%>
